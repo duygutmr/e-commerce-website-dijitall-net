@@ -1,0 +1,54 @@
+.woman__images {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+    grid-gap: 30px;
+
+    &-black {
+        width: 550px;
+        height: 830px;
+        
+
+        &-text {
+            position: absolute;
+            font-family: 'Best Deals';
+            font-size: 150px;
+            color: #fff;
+            left: 120px;
+            bottom: -7%;
+        }
+    }
+
+    &-first,
+    &-second,
+    &-third {
+        position: relative;
+    }
+   &-color {
+       width: 350px;
+       height: auto;
+
+       &-btn-1,
+       &-btn-2 {
+        position: absolute;
+        padding: 20px 50px;
+        text-transform: uppercase;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        cursor: pointer;
+
+        &:focus {
+            outline: 0;
+        }
+        
+       }
+
+       &-btn-1,
+       &-btn-2 {
+           right: 65px;
+           bottom: 40px;
+       }
+   }
+}

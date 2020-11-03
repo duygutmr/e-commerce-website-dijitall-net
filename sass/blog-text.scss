@@ -1,0 +1,17 @@
+.blog__text {
+    grid-column: 4 / 9;
+
+    text-align: center;
+    padding: 0 50px;
+
+    &-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+
+    &-paragraphs {
+        font-family: 'Poppins';
+    }
+}

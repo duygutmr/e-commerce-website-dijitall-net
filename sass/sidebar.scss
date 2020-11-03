@@ -1,0 +1,46 @@
+.sidebar {
+    background-color: rgb(248, 166, 98);
+    grid-column: full-start / center-end;
+    display: grid;
+
+    &__text {
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        color: #fff;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    &__icons {
+        grid-column: 11 / 12;
+        justify-self: end;
+
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+    }
+   
+    &__turkish {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.down {
+    transform: rotate(45deg);
+  }
+
+
+  

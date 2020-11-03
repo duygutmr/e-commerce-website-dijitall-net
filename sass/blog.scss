@@ -1,0 +1,27 @@
+.blog {
+    grid-column: 3 / 10;
+    margin-top: 100px;
+    
+
+    &__content {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        text-transform: uppercase;
+        font-family: "Playfair";
+    }
+    
+    &__slider {
+        margin-top: 50px;
+
+        &-image {
+            width: 100%;
+        }
+    
+    } 
+}
+
+.above {
+    position: relative;
+    bottom: 50px;
+}

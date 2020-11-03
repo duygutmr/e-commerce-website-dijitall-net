@@ -1,0 +1,51 @@
+.footer {
+    background-color: #000;
+    grid-column: full-start / full-end;
+    margin-top: 250px;
+
+    display: grid;
+    grid-template-columns: repeat(12, minmax(min-content, 1fr));
+    grid-template-rows: repeat(3, 11vw);
+
+    &__images {
+        grid-column: 2 / 8;
+        display: grid;
+
+        &-first {
+            grid-column: 2 / span 3 ;
+            width: 100%;
+            position: relative;
+            bottom: 158px;
+        }
+
+        &-second {
+            grid-column: 6 / span 3;
+            width: 90%;
+        }
+    }
+
+
+    &__content,
+    &__copyright {
+        grid-column: 8 / -1;
+        color: #fff;
+    }
+
+    &__content {
+        padding: 20px 10px;
+
+        &-color {
+            color: rgb(230, 145, 48);
+        }
+    }
+
+    &__copyright {
+        grid-row: 3 / -1;
+    }
+}
+
+.dijital {
+    grid-column: 12;
+    grid-row: 3 / -1;
+    align-self: center;
+}

@@ -1,0 +1,30 @@
+.story {
+    background-image: url('../images/background-section.png');
+    grid-column: full-start / full-end;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    display: grid;
+
+    &__content {
+        grid-column: 3 / 6;
+        grid-row: 2 / 6;
+
+    &-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+    }
+
+    &-title,
+    &-paragraph {
+        color: #fff;
+    }
+}
+
+    .colored {
+        color: #e09627;
+    }
+
+    .first {
+        margin-top: 50px;
+    }
+}

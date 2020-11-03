@@ -1,0 +1,58 @@
+.news {
+    background-color: rgba(218, 214, 214, 0.733);
+    grid-column: full-start / full-end;
+    padding: 20px;
+    margin-top: 70px;
+
+
+    &__contents {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(min-content, 1fr));
+    }
+
+    &__text {
+        grid-column: 2 / span 2;
+        justify-self: start;
+
+        h5 {
+            font-family: 'Playfair', sans-serif;
+            font-weight: bold;
+        }
+    }
+
+    &__mail {
+        grid-column: 5 / span 4;
+        align-self: center;
+        position: relative;
+
+        &-input {
+            background-color: #000;
+            width: 90%;
+            padding: 10px;
+            
+        }
+
+        &-icon {
+            position: absolute;
+            right: 70px;
+            top: 10px;
+            cursor: pointer;
+        }
+    }
+
+    &__icons {
+        grid-column: 9 / span 3;
+        align-self: center;
+        justify-self: center;
+        cursor: pointer;
+
+        img {
+            margin-right: 10px;
+            filter: invert(50%);
+        }
+    }
+}
+
+input[type=text] {
+    color: #fff;
+}
