@@ -1,5 +1,6 @@
 .products {
     grid-column: center-start / center-end;
+    margin-top: 100px;
 
 
     &__content {
@@ -37,6 +38,22 @@
         margin: 0 1rem;
         transform: translateY(-2rem);
     }
+
+    &__tab {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        text-transform: uppercase;
+    }
+
+    .tablinks {
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .tab h6.active {
+        font-weight: bold;
+      }
 }
 
 .slider {

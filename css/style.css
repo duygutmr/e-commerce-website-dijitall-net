@@ -223,7 +223,8 @@ body {
         width: 550px; }
 
 .products {
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin-top: 100px; }
   .products__content {
     display: grid;
     justify-content: center;
@@ -249,6 +250,16 @@ body {
     width: 4rem;
     margin: 0 1rem;
     transform: translateY(-2rem); }
+  .products__tab {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-transform: uppercase; }
+  .products .tablinks {
+    margin: 10px;
+    cursor: pointer; }
+  .products .tab h6.active {
+    font-weight: bold; }
 
 .slider {
   display: flex; }
