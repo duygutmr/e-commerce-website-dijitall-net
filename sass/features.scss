@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin-top: 100px;
+    position: relative;
+
 
     &__content {
         display: grid;
@@ -28,12 +30,12 @@
                 content:"";
                 position: absolute;
                 width: 250px;
-                left: 130px;
+                left: 0;
                 right: 0;
                 height: 0.5em;
-                border-top: 3px solid #000;
+                border-top: 3.5px solid #000;
                 z-index: -1;
-                bottom: -230px;
+                top: 200px;
             }
         }
 
@@ -41,11 +43,11 @@
             &::after {
                 content:"";
                 position: absolute;
-                bottom: -50px;
-                left: 440px;
+                top: 25px;
+                left: 330px;
                 right: 0;
                 height: 0.5em;
-                border-top: 3px solid #000;
+                border-top: 3.5px solid #000;
                 z-index: -1;
             }
         }
@@ -65,7 +67,7 @@
 
 
         &-colored {
-            color: rgb(243, 212, 128);
+            color: #feb564;
             grid-column: 1 / 7;
             width: 400px;
         }
@@ -80,7 +82,7 @@
     &__image {
         display: grid;
         grid-column: 6 / -1;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(10, minmax(5vw, 1fr));
         grid-template-rows: repeat(6, min-content);
         position: relative;
         top: 100px;
@@ -98,18 +100,18 @@
         &-products {
            grid-column: 1 / -1;
            grid-row: 2 / 5;
-           background-color: rgb(255, 235, 212);
+           background-color: #ffebd4;
            display: grid;
-           grid-template-columns: repeat(5, 1fr);
+           grid-template-columns: repeat(8, 5vw);
            border-radius: 10px 0 0 0;
-           padding: 50px 20px;
+           grid-gap: 20px;
 
            &-price {
             grid-row: 3 / 4;
         }
 
         &-text {
-            grid-column: 1 / 5;
+            grid-column: 1 / 4;
             grid-row: 2 / 3;
         }
 
@@ -119,7 +121,7 @@
             display: grid;
            grid-template-columns: repeat(5,1fr);
            grid-template-rows: repeat(4, min-content);
-            grid-column: 2 / 7;
+            grid-column: 3 / 10;
             position: relative;
             margin: 20px 0;
 
@@ -127,13 +129,13 @@
             
 
             h5 {
-                grid-column: 1 / 5;
+                grid-column: 1 / 4;
             }
 
             img {
-                grid-column: 5 / -1;
+                grid-column: 4 / 6;
                 grid-row: 1 / 4;
-                justify-self: end;
+                justify-self: center;
             }
 
           
@@ -143,12 +145,13 @@
         &-second::after {
                 content:"";
                 position: absolute;
-                bottom: -10px;
+                bottom: -30px;
                 left: 0;
                 right: 0;
                 height: 0.5em;
-                border-top: 1px solid rgb(241, 181, 111);
+                border-top: 1px solid  #fad9b4;
                 z-index: 10;
+                width: 550px;
         }
         }
     }

@@ -7,8 +7,7 @@
         justify-content: center;
         justify-items: center;
         text-transform: uppercase;
-        font-family: "Playfair";
-        position: relative;
+        font-family: "Playfair";  
     }
 
     &-images {
@@ -22,22 +21,18 @@
         width: 100%;
     }
 
+    &-line::after,
+    &-line::before {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #feb564;
+        width: 4rem;
+        margin: 0 1rem;
+        transform: translateY(-2rem);
+    }
+
     .icon {
         width: 20px;
-        margin-bottom: 50px;
-        
-
-        &::after {
-            content:"";
-                position: absolute;
-                bottom: -10px;
-                left: 0;
-                right: 0;
-                height: 0.5em;
-                border-top: 1px solid rgb(241, 181, 111);
-                z-index: 10;
-           
-        }
-       
+        margin-bottom: 50px; 
     }
 }

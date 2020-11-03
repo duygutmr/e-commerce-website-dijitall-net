@@ -1,11 +1,18 @@
 .products {
     grid-column: center-start / center-end;
-    h2 {
-        position: relative;
-    }
 
+
+    &__content {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        text-transform: uppercase;
+        font-family: "Playfair";
+    }
+  
     &__icon {
         width: 20px;
+        margin-bottom: 50px; 
         
     }
 
@@ -21,6 +28,15 @@
         z-index: -1;
     }
    
+    &__line::after,
+    &__line::before {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid rgb(226, 126, 44);
+        width: 4rem;
+        margin: 0 1rem;
+        transform: translateY(-2rem);
+    }
 }
 
 .slider {

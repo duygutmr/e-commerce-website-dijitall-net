@@ -9,6 +9,16 @@
         justify-items: center;
         text-transform: uppercase;
         font-family: "Playfair";
+        
+        &-line::after,
+        &-line::before {
+            display: inline-block;
+            content: "";
+            border-top: 1px solid #feb564;
+            width: 4rem;
+            margin: 0 1rem;
+            transform: translateY(-2rem);
+        }
     }
     
     &__slider {
@@ -19,6 +29,13 @@
         }
     
     } 
+
+    &__icon {
+        width: 20px;
+        margin-bottom: 50px; 
+    }
+
+   
 }
 
 .above {
