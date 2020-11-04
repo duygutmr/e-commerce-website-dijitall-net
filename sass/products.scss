@@ -13,8 +13,7 @@
   
     &__icon {
         width: 20px;
-        margin-bottom: 50px; 
-        
+        margin-bottom: 50px;         
     }
 
     &__icon::before,
@@ -40,10 +39,26 @@
     }
 
     &__tab {
-        display: flex;
+        display: grid;
         justify-content: center;
         justify-items: center;
         text-transform: uppercase;
+
+    
+        li a {
+            text-decoration: none;
+            color: #000;
+            margin: 10px;
+        }
+
+      
+       
+    }
+
+    .tab-content {
+        width: 1200px;
+        margin: auto;
+        margin-top: 100px;
     }
 
     .tablinks {
@@ -59,3 +74,63 @@
 .slider {
     display: flex;
 }
+
+.nav .nav-pills {
+    display: grid;
+}
+
+
+.box {
+    width: 200px ;
+    height: 100%;
+    position: relative;
+    padding: 0 10px;
+}
+
+.products-paragraph {
+    font-size: 14px;
+    text-align: start;
+
+    &-top {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding:0 0 0 130px;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+.owl-nav.disabled {
+    display: block !important;
+}
+
+.owl-prev {
+    display: block !important;
+    background-color: transparent !important;
+    position: absolute !important;
+    top: 70px !important;
+    left: -100px !important;
+
+    img {
+        width: 20x;
+        height: 20px;
+        filter: invert(50%);
+    }
+}
+
+.owl-next {
+    display: block !important;
+    background-color: transparent !important;
+    position: absolute !important;
+    top: 70px !important;
+    right: -100px !important;
+    img {
+        width: 20x;
+        height: 20px;
+        filter: invert(50%);
+    }
+}
+
