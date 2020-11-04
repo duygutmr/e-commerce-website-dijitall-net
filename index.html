@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="http://www.24limousine.com/wp-content/themes/24Limousine/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.24limousine.com/wp-content/themes/24Limousine/assets/css/owl.carousel.min.css">
 
     <title>Document</title>
 </head>
@@ -177,7 +177,7 @@
               <div class="tab-content">
                 <div id="top" class="tab-pane in active">
                     <div class=" tab-img">
-                        <div class="owl-carousel owl-theme" id="products">
+                        <div class="owl-carousel owl-theme products_wrapper">
                             <div class="box">
                                 <div class="item"><img src="./images/alyans.png" style="width: 45%;" />
                                     <span>
@@ -231,7 +231,7 @@
                     </div>
                 </div>
                 <div id="menu1" class="tab-pane">
-                    <div class="owl-carousel owl-theme" id="products">
+                    <div class="owl-carousel owl-theme products_wrapper">
                         <div class="box">
                             <div class="item"><img src="./images/yüzük.png" style="width: 80%;" />
                                 <span>
@@ -280,7 +280,7 @@
                     </div>
                 </div>
                 <div id="menu2" class="tab-pane fade">
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel owl-theme products_wrapper products_wrapper">
                         <div class="box">
                             <div class="item"><img src="./images/alyans.png" style="width: 45%;" />
                                 <span>
@@ -329,7 +329,7 @@
                     </div>
                 </div>
                 <div id="menu3" class="tab-pane fade">
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel owl-theme products_wrapper">
                         <div class="box">
                             <div class="item"><img src="./images/alyans.png" style="width: 45%;" />
                                 <span>
@@ -444,35 +444,35 @@
                    <div class="image-size">
                     <div class="test_img">
                         <div class="main-reviewimage">
-                           <img src="images/blog/blog-1.png" alt="">
+                           <img src="images/blog/blog-1.png" alt="blog image">
                         </div>
                      </div>
                    </div>
                    <div class="image-size">
                     <div class="test_img">
                         <div class="main-reviewimage">
-                           <img src="images/blog/blog-2.png" alt="">
+                           <img src="images/blog/blog-2.png" alt="blog image">
                         </div>
                      </div>
                    </div>
                    <div class="image-size">
                     <div class="test_img">
                         <div class="main-reviewimage">
-                           <img src="images/blog/blog-3.png" alt="">
+                           <img src="images/blog/blog-3.png" alt="blog image">
                         </div>
                      </div>
                    </div>
                    <div class="image-size">
                     <div class="test_img">
                         <div class="main-reviewimage">
-                           <img src="images/blog/blog-1.png" alt="">
+                           <img src="images/blog/blog-1.png" alt="blog image">
                         </div>
                      </div>
                    </div>
                    <div class="image-size">
                     <div class="test_img">
                         <div class="main-reviewimage">
-                           <img src="images/blog/blog-2.png" alt="">
+                           <img src="images/blog/blog-2.png" alt="blog image">
                         </div>
                      </div>
                    </div>
@@ -552,12 +552,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://www.24limousine.com/wp-content/themes/24Limousine/assets/js/owl.carousel.min.js">
+    <script type="text/javascript" src="https://www.24limousine.com/wp-content/themes/24Limousine/assets/js/owl.carousel.min.js">
     </script>
 
         <script>
 
-            $('#products').owlCarousel({
+            $('.products_wrapper').owlCarousel({
                 loop:true,
                 margin:10,
                 nav:true,
@@ -574,17 +574,17 @@
                 }
             })
 
-            // $(function(){
+            $(function(){
 
-            //     $('#slide-testimonal').owlCarousel({
-            //         center: true,
-            //         items:3,
-            //         loop:true,
-            //         margin:10,
-            //         autoplay: true,
-            //         autoPlay: 1000
-            //     })
-            // }); 
+                $('#slide-testimonal').owlCarousel({
+                    center: true,
+                    items:3,
+                    loop:true,
+                    margin:10,
+                    autoplay: true,
+                    autoPlay: 1000
+                })
+            }); 
 
             $( ".owl-prev").html('<img class="icon" src="svg/chevron-left-solid.svg">');
             $( ".owl-next").html('<img class="icon" src="svg/chevron-right-solid.svg">');
