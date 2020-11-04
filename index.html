@@ -440,21 +440,7 @@
 
         <div class="testimonials">
             <div class="inner-testimonials">
-               <div class="owl-carousel custome_slide" id="slide-testimonal">
-                   <div class="image-size">
-                    <div class="test_img">
-                        <div class="main-reviewimage">
-                           <img src="images/blog/blog-2.png" alt="">
-                        </div>
-                     </div>
-                   </div>
-                   <div class="image-size">
-                    <div class="test_img">
-                        <div class="main-reviewimage">
-                           <img src="images/blog/blog-2.png" alt="">
-                        </div>
-                     </div>
-                   </div>
+               <div class="owl-carousel owl-theme" id="slide-testimonal">
                    <div class="image-size">
                     <div class="test_img">
                         <div class="main-reviewimage">
@@ -476,6 +462,21 @@
                         </div>
                      </div>
                    </div>
+                   <div class="image-size">
+                    <div class="test_img">
+                        <div class="main-reviewimage">
+                           <img src="images/blog/blog-1.png" alt="">
+                        </div>
+                     </div>
+                   </div>
+                   <div class="image-size">
+                    <div class="test_img">
+                        <div class="main-reviewimage">
+                           <img src="images/blog/blog-2.png" alt="">
+                        </div>
+                     </div>
+                   </div>
+                
                  
                </div>
             </div>
@@ -554,29 +555,41 @@
     <script type="text/javascript" src="http://www.24limousine.com/wp-content/themes/24Limousine/assets/js/owl.carousel.min.js">
     </script>
 
-    <script>
+        <script>
 
-        $('#products').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
+            $('#products').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
                 }
-            }
-        })
+            })
 
-        $( ".owl-prev").html('<img class="icon" src="svg/chevron-left-solid.svg">');
-        $( ".owl-next").html('<img class="icon" src="svg/chevron-right-solid.svg">');
-        
-    </script>
+            // $(function(){
+
+            //     $('#slide-testimonal').owlCarousel({
+            //         center: true,
+            //         items:3,
+            //         loop:true,
+            //         margin:10,
+            //         autoplay: true,
+            //         autoPlay: 1000
+            //     })
+            // }); 
+
+            $( ".owl-prev").html('<img class="icon" src="svg/chevron-left-solid.svg">');
+            $( ".owl-next").html('<img class="icon" src="svg/chevron-right-solid.svg">');
+
+        </script>
 
 </body>
 
