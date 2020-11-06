@@ -9,6 +9,9 @@
         grid-column: full-start / full-end;
         grid-gap: 10px;
     }
+    @media only screen and (max-width:$bp-large) {
+        display: block;
+    }
 
     &-black {
         width: 550px;
@@ -17,6 +20,10 @@
         @media only screen and (max-width:$bp-largest) {
             width: 400px;
             height: 715px;
+        }
+        @media only screen and (max-width:$bp-large) {
+            width: 100%;
+            height: auto;
         }
         
 
@@ -39,13 +46,27 @@
     &-third {
         position: relative;
     }
+
+    &-second {
+        @media only screen and (max-width:$bp-large) {
+            float: left;
+        }
+    }
+    &-third {
+        @media only screen and (max-width:$bp-large) {
+            float: right;
+        }
+    }
    &-color {
        width: 350px;
        height: auto;
 
        @media only screen and (max-width:$bp-largest) {
-        width: 300px;
-    }
+            width: 300px;
+        }
+       @media only screen and (max-width:$bp-large) {
+            width: 384px;
+        }
 
        &-btn-1,
        &-btn-2 {

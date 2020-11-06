@@ -9,6 +9,14 @@
         grid-template-rows: repeat(10, 5vw);
         grid-column: 6 / full-end;
       }
+    @media only screen and (max-width:$bp-large) {
+        img {
+            width: 130px;
+        }
+      }
+  
+
+     
 
 }
 

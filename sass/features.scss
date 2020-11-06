@@ -15,6 +15,9 @@
         @media only screen and (max-width:$bp-largest) {
             grid-column: 1 / 5;
          }
+        @media only screen and (max-width:$bp-large) {
+            grid-column: 1 / 9;
+         }
 
         &-big-title,
         &-colored,
@@ -91,6 +94,10 @@
         position: relative;
         top: 100px;
 
+        @media only screen and (max-width:$bp-large) {
+          grid-column: 1 / -1;
+         }
+
         &-img {
             width: 400px;
             grid-column: 1 / 2;
@@ -104,6 +111,11 @@
         @media only screen and (max-width:$bp-largest) {
             width: 250px;
             right: 110px;
+         }
+
+        @media only screen and (max-width:$bp-large) {
+            bottom: 650px;
+            left: 400px;
          }
         }
 
@@ -119,6 +131,11 @@
            @media only screen and (max-width:$bp-largest) {
             grid-gap: 0;
           }
+
+          @media only screen and (max-width:$bp-large) {
+            grid-template-columns: repeat(9, 9vw);
+           
+         }
 
            &-price {
             grid-row: 3 / 4;
@@ -142,6 +159,9 @@
             @media only screen and (max-width:$bp-largest) {
                grid-column: 4 / 11;
              }
+             @media only screen and (max-width:$bp-large) {
+                grid-column: 2 / -1;
+               }
 
             h5 {
                 grid-column: 1 / 4;
@@ -175,6 +195,9 @@
 
                 @media only screen and (max-width:$bp-largest) {
                    width: 100%;
+                  }
+                @media only screen and (max-width:$bp-large) {
+                   width: 80%;
                   }
         }
         }

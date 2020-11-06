@@ -14,6 +14,10 @@
         grid-column: 2 / span 2;
         justify-self: start;
 
+        @media only screen and (max-width:$bp-large) {
+            grid-column: 1 / span 4;
+          }
+
         h5 {
             font-family: 'Playfair', sans-serif;
             font-weight: bold;
@@ -24,6 +28,11 @@
         grid-column: 5 / span 4;
         align-self: center;
         position: relative;
+
+        
+        @media only screen and (max-width:$bp-large) {
+            justify-self: end;
+          }
 
         &-input {
             background-color: #000;
@@ -45,6 +54,11 @@
         align-self: center;
         justify-self: center;
         cursor: pointer;
+
+        @media only screen and (max-width:$bp-large) {
+            grid-column: 9 / span 4;
+          }
+
 
         img {
             margin-right: 10px;

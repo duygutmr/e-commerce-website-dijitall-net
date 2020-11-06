@@ -21,6 +21,10 @@
         grid-column: 9 / -1;
         justify-self: center;
 
+        @media only screen and (max-width:$bp-large) {
+            grid-column: 8 / -1;
+          }
+
         ::placeholder{
             color: #fff;
             font-family: 'Poppins', sans-serif;
