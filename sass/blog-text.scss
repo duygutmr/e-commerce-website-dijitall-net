@@ -1,8 +1,13 @@
 .blog__text {
     grid-column: 4 / 9;
 
+    
+    @media only screen and (max-width:$bp-largest) {
+       grid-column: center-start / center-end;
+     }
+
     text-align: center;
-    padding: 0 50px;
+    padding: 0 100px;
     margin-top: 50px;
 
     &-title {

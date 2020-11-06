@@ -11,6 +11,10 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(5, min-content);
         grid-column: 1 / 4;
+         
+        @media only screen and (max-width:$bp-largest) {
+            grid-column: 1 / 5;
+         }
 
         &-big-title,
         &-colored,
@@ -82,7 +86,7 @@
     &__image {
         display: grid;
         grid-column: 6 / -1;
-        grid-template-columns: repeat(10, minmax(5vw, 1fr));
+        grid-template-columns: repeat(12, minmax(min-content, 1fr));
         grid-template-rows: repeat(6, min-content);
         position: relative;
         top: 100px;
@@ -95,6 +99,12 @@
             position: relative;
             right: 240px;
             bottom: 100px;
+
+             
+        @media only screen and (max-width:$bp-largest) {
+            width: 250px;
+            right: 110px;
+         }
         }
 
         &-products {
@@ -102,9 +112,13 @@
            grid-row: 2 / 5;
            background-color: #ffebd4;
            display: grid;
-           grid-template-columns: repeat(8, 5vw);
+           grid-template-columns: repeat(10, 5vw);
            border-radius: 10px 0 0 0;
            grid-gap: 20px;
+
+           @media only screen and (max-width:$bp-largest) {
+            grid-gap: 0;
+          }
 
            &-price {
             grid-row: 3 / 4;
@@ -125,8 +139,9 @@
             position: relative;
             margin: 20px 0;
 
-
-            
+            @media only screen and (max-width:$bp-largest) {
+               grid-column: 4 / 11;
+             }
 
             h5 {
                 grid-column: 1 / 4;
@@ -136,6 +151,11 @@
                 grid-column: 4 / 6;
                 grid-row: 1 / 4;
                 justify-self: center;
+                max-width: 100%;
+
+                @media only screen and (max-width:$bp-largest) {
+                    max-width: 80%;
+                  }
             }
 
           
@@ -151,7 +171,11 @@
                 height: 0.5em;
                 border-top: 1px solid  #fad9b4;
                 z-index: 10;
-                width: 550px;
+                width: 90%;
+
+                @media only screen and (max-width:$bp-largest) {
+                   width: 100%;
+                  }
         }
         }
     }

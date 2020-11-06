@@ -6,9 +6,19 @@
     display: grid;
     margin-top: 100px;
 
+    
+    @media only screen and (max-width:$bp-largest) {
+        grid-template-rows: repeat(12, 5vw);
+      }
+
+
     &__content {
         grid-column: 3 / 6;
         grid-row: 2 / 6;
+
+        @media only screen and (max-width:$bp-largest) {
+            grid-column: 2 / 5;
+          }
 
     &-title {
         font-family: 'Playfair Display', serif;

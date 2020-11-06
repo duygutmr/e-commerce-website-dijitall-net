@@ -5,9 +5,19 @@
     margin-top: 100px;
     grid-gap: 30px;
 
+    @media only screen and (max-width:$bp-largest) {
+        grid-column: full-start / full-end;
+        grid-gap: 10px;
+    }
+
     &-black {
         width: 550px;
         height: 830px;
+
+        @media only screen and (max-width:$bp-largest) {
+            width: 400px;
+            height: 715px;
+        }
         
 
         &-text {
@@ -17,6 +27,10 @@
             color: #fff;
             left: 120px;
             bottom: -7%;
+
+            @media only screen and (max-width:$bp-largest) {
+               left: 55px;
+            }
         }
     }
 
@@ -28,6 +42,10 @@
    &-color {
        width: 350px;
        height: auto;
+
+       @media only screen and (max-width:$bp-largest) {
+        width: 300px;
+    }
 
        &-btn-1,
        &-btn-2 {
