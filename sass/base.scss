@@ -29,7 +29,7 @@ $bp-small: 37.5em;
         grid-template-columns: [full-start] 1fr [center-start] 1fr repeat(6, [col-start] minmax(min-content, 100px) [col-end]) [center-end] 1fr [full-end];
     }
     @media only screen and (max-width: $bp-large) {
-        grid-template-rows: 3vh 6vh repeat(5, min-content) ;
+        grid-template-rows: min-content repeat(5, min-content) ;
         grid-template-columns: [full-start] 100px [center-start] 1fr repeat(4, [col-start] minmax(min-content, 100px) [col-end]) [center-end] 100px [full-end];
     }
 }

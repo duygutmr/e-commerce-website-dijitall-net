@@ -2,6 +2,10 @@
     grid-column: center-start / center-end;
     margin-top: 100px;
 
+    @media only screen and (max-width:$bp-small) { 
+        grid-column: full-start / full-end;
+    }
+
     &-content {
         display: grid;
         justify-content: center;
@@ -14,6 +18,10 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 10px;
+
+        @media only screen and (max-width:$bp-small) { 
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
  
 

@@ -7,6 +7,12 @@
     grid-template-columns: repeat(12, minmax(min-content, 1fr));
     grid-template-rows: repeat(3, 11vw);
 
+    @media only screen and (max-width:$bp-medium) { 
+        display: block;
+        margin-top: 100px;
+       }
+
+
     &__images {
         grid-column: 2 / 8;
         display: grid;
@@ -16,11 +22,19 @@
             width: 100%;
             position: relative;
             bottom: 158px;
+
+            @media only screen and (max-width:$bp-medium) { 
+                position: static;
+            }
         }
 
         &-second {
             grid-column: 6 / span 3;
             width: 90%;
+            
+            @media only screen and (max-width:$bp-medium) { 
+                width: 100%;
+            }
         }
     }
 
@@ -29,6 +43,10 @@
     &__copyright {
         grid-column: 8 / -1;
         color: #fff;
+
+        @media only screen and (max-width:$bp-medium) { 
+            text-align: center;
+        }
     }
 
     &__content {

@@ -6,9 +6,18 @@
        grid-column: center-start / center-end;
      }
 
+     
+    @media only screen and (max-width:$bp-medium) {
+        grid-column: 1 / -1;
+       }
+
     text-align: center;
     padding: 0 100px;
     margin-top: 50px;
+
+    @media only screen and (max-width:$bp-medium) {
+        padding: 10px;
+       }
 
     &-title {
         font-family: 'Playfair Display', serif;

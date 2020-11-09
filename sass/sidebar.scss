@@ -3,6 +3,11 @@
     grid-column: full-start / center-end;
     display: grid;
 
+    @media only screen and (max-width:$bp-medium) {
+        display: none;
+        
+     }
+
     &__text {
         justify-items: center;
         align-items: center;
@@ -30,6 +35,10 @@
         justify-items: center;
         align-items: center;
         cursor: pointer;
+        @media only screen and (max-width:$bp-medium) {
+            display: none;
+            
+         }
     }
 }
 

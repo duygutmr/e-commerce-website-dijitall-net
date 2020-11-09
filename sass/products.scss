@@ -5,6 +5,9 @@
     @media only screen and (max-width:$bp-largest) {
       margin-top: 200px;
      }
+     @media only screen and (max-width:$bp-small) {
+        grid-column: full-start / full-end;
+      }
 
 
     &__content {
@@ -111,8 +114,12 @@
     }
 }
 
-.owl-nav.disabled {
+.owl-nav {
     display: block !important;
+
+    @media only screen and (max-width:$bp-medium) {
+        display: none !important;
+     }
 }
 
 .owl-prev {

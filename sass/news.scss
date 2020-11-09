@@ -8,6 +8,12 @@
     &__contents {
         display: grid;
         grid-template-columns: repeat(12, minmax(min-content, 1fr));
+
+        @media only screen and (max-width:$bp-large) {
+            display: block;
+            text-align: center;
+          }
+
     }
 
     &__text {
@@ -58,6 +64,10 @@
         @media only screen and (max-width:$bp-large) {
             grid-column: 9 / span 4;
           }
+          @media only screen and (max-width:$bp-large) {
+            margin-top: 35px;
+          }
+
 
 
         img {
